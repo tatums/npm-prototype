@@ -9,7 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "widget-a": "file:npm-packages/widget-a"
+    "widget-a": "file:npm-packages/widget-a",
+    "widget-b": "file:npm-packages/widget-b"
   },
   "devDependencies": {
     "amdclean": "^2.7.0",
