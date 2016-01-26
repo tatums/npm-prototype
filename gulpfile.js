@@ -22,7 +22,6 @@ function getPackages () {
 
 gulp.task('concat', function() {
   var packageFiles = getPackages();
-  console.log(packageFiles)
   return gulp.src(packageFiles)
     .pipe(concat('app.js'))
     .pipe(gulp.dest('./site/scripts/'));
