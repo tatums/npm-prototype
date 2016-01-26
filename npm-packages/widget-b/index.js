@@ -1,9 +1,10 @@
 define(function (require) {
-  var c = require('node_modules/core/index.js');
-    return {
-        getHello: function () {
-            return 'Hello World from Widget-B';
-        },
-        getCore: c.getHello
-    };
+  var core = require('node_modules/core/index.js');
+  var fn = function () {
+    alert(core.getHello());
+  }
+  var button = window.document.createElement("button");
+  button.innerHTML = "[+] Feedback - Widget B";
+  button.onclick = fn;
+  window.document.body.appendChild(button);
 });

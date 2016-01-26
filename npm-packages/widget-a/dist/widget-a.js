@@ -1,0 +1,1 @@
+(function(){var e,t;e={getHello:function(){return"Hello World from Core"}},t=function(t){var n=e,r=function(){alert(n.getHello())},i=window.document.createElement("button");i.innerHTML="[+] Feedback - Widget A",i.onclick=r,window.document.body.appendChild(i)}({})})();

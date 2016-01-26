@@ -4,17 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "fix": "rm -rf npm-packages/core/node_modules/ && rm -rf npm-packages/widget-a/node_modules/ && rm -rf npm-packages/widget-b/node_modules/ && cd npm-packages/core/ && npm i",
+    "start": "http-server ./site -o",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "http-server": "^0.8.5",
     "widget-a": "file:npm-packages/widget-a",
     "widget-b": "file:npm-packages/widget-b"
   },
   "devDependencies": {
     "amdclean": "^2.7.0",
     "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
     "requirejs": "^2.1.22"
   }
 }
