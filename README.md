@@ -17,6 +17,11 @@ $ npm run setup
 $ npm run start
 ````
 
+## Build
+```
+$ gulp build
+```
+
 ## Configure
 Edit build.config.js to choose which widgets are built.
 
