@@ -10,5 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "core": "file:///Users/tszymczak/Code/npm-prototype/npm-packages/core"
+  },
+  "devDependencies": {
+    "amdclean": "^2.7.0"
   }
 }

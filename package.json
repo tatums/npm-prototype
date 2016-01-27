@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "fix": "rm -rf npm-packages/core/node_modules/ && rm -rf npm-packages/widget-a/node_modules/ && rm -rf npm-packages/widget-b/node_modules/ && cd npm-packages/core/ && npm i",
+    "fix_submodules": "sh fix_submodules.sh",
+    "setup": "rm -rf ./node_modules && npm i && node npm-packages/widget-a/require.js && node npm-packages/widget-a/require.js ",
     "start": "http-server ./site -o",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
