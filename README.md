@@ -7,8 +7,25 @@ manage dependencies.
 For example, to create an implemetation with 2 widgets (widget-a,
 widget-b)
 
-```bash
-$ packages=widget-a,widget-b gulp
-```
+## Setup
 
+```bash
+$ npm run setup
+```
+## Server
+```bash
+$ npm run start
+````
+
+## Configure
+Edit build.config.js to choose which widgets are built.
+
+```javascript
+{
+  "packages": [
+    {"name": "widget-a", "options": [] },
+    {"name": "widget-b", "options": [] }
+  ]
+}
+```
 
